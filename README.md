@@ -1,135 +1,75 @@
-# Hi, I'm Afsar Kuttiyassan 👋
+# Afsar Kuttiyassan
 
-IT Engineer transitioning into Cybersecurity with hands-on experience in Windows environments, Active Directory, endpoint support, infrastructure troubleshooting, and security lab environments.
+**Cybersecurity Engineer** · SOC Analysis · Detection Engineering · Active Directory Security
 
-I build practical security projects focused on enterprise environments, Active Directory attacks/detections, Windows hardening, vulnerability analysis, and penetration testing labs.
-
----
-
-## 🔐 Cybersecurity Focus Areas
-
-- Active Directory Security
-- Windows Security Hardening
-- Vulnerability Assessment
-- Penetration Testing Labs
-- Detection Engineering
-- Security Automation
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Afsar%20Kuttiyassan-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/afsar-kuttiyassan)
+[![GitHub](https://img.shields.io/badge/GitHub-afsukool-181717?style=flat&logo=github)](https://github.com/afsukool)
+![Focus](https://img.shields.io/badge/Focus-Blue%20Team%20%7C%20Red%20Team-darkblue)
 
 ---
 
-## 🧪 Hands-On Labs & Platforms
+I build enterprise-grade security labs and document attack simulations end-to-end — from exploitation through SIEM detection, root cause analysis, and hardening recommendations.
 
-- Hack The Box
-- VulnHub
-- Active Directory Home Lab
-- Windows Security Lab
-- Security Automation Projects
+My background in Windows infrastructure and Active Directory environments gives me a practical edge in understanding how real enterprise attacks work and how to detect them.
 
 ---
 
-## 📂 Featured Projects
+## 🔬 What I've Built
 
-### 🏠 Security Home Lab
-Enterprise-style cybersecurity lab with:
-- Kali Linux
-- Windows Server
-- Active Directory
-- Splunk
-- Sysmon
-- Attack simulation and detection
+### [Enterprise AD Security Lab](https://github.com/afsukool/security-homelab)
+Full multi-machine lab: Windows Server 2019 DC, domain-joined Windows 10 client, Splunk Enterprise SIEM, and Kali Linux attacker — all on an isolated `CORP.LOCAL` domain.
 
-➡️ [View Project](https://github.com/afsukool/security-homelab)
+**Completed attack simulations with live detection validation:**
 
----
+| Attack | MITRE | Splunk Detection |
+|--------|-------|-----------------|
+| Password Spraying | T1110.003 | EventCode=4625, multi-user spike from single src_ip |
+| Kerberoasting | T1558.003 | EventCode=4769, Ticket_Encryption_Type=0x17 |
+| AD Path Enumeration | T1069, T1482 | BloodHound + LDAP query correlation |
+| Encoded PowerShell | T1059.001 | Sysmon ID 1, `-enc` / `IEX` in cmdline |
 
-### 🏢 Active Directory Security Lab
-AD attack simulation and defensive validation:
-- Kerberoasting
-- BloodHound
-- Password spraying
-- Pass-the-Hash
-- Detection logs and mitigations
-
-➡️ [View Project](https://github.com/afsukool/active-directory-security-lab)
+> 📄 [Full SOC Incident Report](https://github.com/afsukool/security-homelab/blob/main/docs/Afsar_Kuttiyassan_SOC_Incident_Report.pdf) — professional-grade writeup with evidence screenshots, MITRE mapping, and remediation recommendations.
 
 ---
 
-### 🪟 Windows Hardening Project
-Windows security baseline implementation and hardening:
-- Firewall tuning
-- Defender configuration
-- RDP hardening
-- Local policy review
-- PowerShell audit scripts
+### [Windows Hardening Project](https://github.com/afsukool/windows-hardening-project)
+Security baseline implementation against a live Windows environment — Defender tuning, PowerShell Constrained Language Mode, ASR rules, GPO hardening, RDP lockdown, and local security policy review.
 
-➡️ [View Project](https://github.com/afsukool/windows-hardening-project)
+### [Pentesting Writeups](https://github.com/afsukool/pentest-writeups)
+Documented HTB / VulnHub labs covering enumeration → exploitation → privilege escalation, with methodology notes and lessons learned.
 
----
-
-### ⚔️ Pentesting Writeups
-Documented HTB/VulnHub labs with methodology:
-- Enumeration
-- Exploitation
-- Privilege Escalation
-- Post-exploitation lessons learned
-
-➡️ [View Project](https://github.com/afsukool/pentest-writeups)
+### [Security Automation Scripts](https://github.com/afsukool/security-automation-scripts)
+Python, PowerShell, and Bash scripts for log parsing, Windows auditing, IOC checks, and vulnerability scanning automation.
 
 ---
 
-### 🤖 Security Automation Scripts
-Python, PowerShell, and Bash scripts for:
-- Log parsing
-- Windows auditing
-- IOC checks
-- Vulnerability checks
+## 🛠️ Technical Stack
 
-➡️ [View Project](https://github.com/afsukool/security-automation-scripts)
-
----
-
-## 🛠️ Technical Skills
-
-**Security**
-- Vulnerability Scanning
-- Active Directory Security
-- Windows Hardening
-- Log Analysis
-- Security Monitoring
-- Threat Detection
-
-**Tools**
-- Nmap
-- Burp Suite
-- Wireshark
-- BloodHound
-- Impacket
-- Splunk
-- Sysmon
-- Nessus
-
-**Languages**
-- Python
-- PowerShell
-- Bash
-- HTML/CSS
+```
+SIEM & Detection    Splunk Enterprise · Sysmon · Windows Event Logging · PowerShell Script Block Logging
+AD & Identity       Active Directory · BloodHound · Impacket · Kerberos attack chains
+Offensive           Kali Linux · Nmap · Burp Suite · CrackMapExec · Impacket suite
+Defensive           Windows Hardening · GPO · ASR Rules · gMSA · Tiered Admin Model
+Languages           Python · PowerShell · Bash
+Networking          Wireshark · TCP/IP · DNS · LDAP · Kerberos · SMB
+Vulnerability       Nessus · CVE analysis
+```
 
 ---
 
-## 📜 Certifications & Learning
+## 📜 Certifications & Training
 
-- CPENT Training Completed (Exam Pending)
-- CCNA Knowledge / Networking Fundamentals
-- Active Directory Security Labs
-- Windows Enterprise Support Experience
-
----
-
-## 🌍 Connect With Me
-
-- LinkedIn: https://www.linkedin.com/in/afsar-kuttiyassan
-- GitHub: https://github.com/afsukool
+- **CPENT** — Training completed, exam scheduled
+- **CCNA** — Networking fundamentals, routing & switching
+- Windows enterprise environment experience (AD, endpoint support, infrastructure)
 
 ---
 
-> Building practical cybersecurity skills through labs, automation, detection engineering, and enterprise-focused security projects.
+## 📊 GitHub Stats
+
+![Afsar's GitHub Stats](https://github-readme-stats.vercel.app/api?username=afsukool&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=afsukool&layout=compact&theme=dark&hide_border=true)
+
+---
+
+*Focused on building real skills through real lab work — not certifications alone.*
